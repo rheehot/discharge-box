@@ -4,7 +4,9 @@
   "description": "A calendar to the military service discharge date.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --check  \"**/*.{md,js,json,yml}\"",
+    "lint": "eslint .",
+    "prettier": "prettier --write  \"**/*.{md,js,json,yml}\""
   },
   "repository": {
     "type": "git",
