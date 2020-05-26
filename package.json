@@ -1,0 +1,22 @@
+{
+  "name": "discharge-box",
+  "version": "1.0.0",
+  "description": "A calendar to the military service discharge date.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongwooo/discharge-box.git"
+  },
+  "keywords": [
+    "pinned-gist"
+  ],
+  "author": "Jongwoo Han <han980817@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jongwooo/discharge-box/issues"
+  },
+  "homepage": "https://github.com/jongwooo/discharge-box#readme"
+}
