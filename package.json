@@ -4,6 +4,7 @@
 	"description": "A calendar to the military service discharge date.",
 	"main": "index.js",
 	"scripts": {
+		"calculate": "node index.js",
 		"format": "prettier --check  \"**/*.{md,js,json,yml}\"",
 		"lint": "eslint .",
 		"prettier": "prettier --write  \"**/*.{md,js,json,yml}\""
