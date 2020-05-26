@@ -1,0 +1,29 @@
+name: Discharge Date Calculator
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up timezone
+        uses: zcong1993/setup-timezone@v1.0
+        with:
+          timezone: Asia/Seoul
+      - uses: actions/checkout@v2
+      - name: Set up Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install dependencies
+        run: npm ci
+      - name: Calculate date
+        env:
+          ENLISTMENT_DATE: ${{ secrets.ENLISTMENT_DATE }}
+          DISCHARGE_DATE: ${{ secrets.DISCHARGE_DATE }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run calculate
