@@ -12,10 +12,10 @@ const ENLISTMENT_DATE = process.env.ENLISTMENT_DATE;
 const DISCHARGE_DATE = process.env.DISCHARGE_DATE;
 
 const GIST_ID = process.env.GIST_ID;
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GH_TOKEN = process.env.GITHUB_TOKEN;
 
 const octokit = new Octokit({
-	auth: `token ${GITHUB_TOKEN}`,
+	auth: `token ${GH_TOKEN}`,
 });
 
 const main = async () => {
