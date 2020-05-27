@@ -72,10 +72,10 @@ const dateCalculator = (enlistmentDate, dischargeDate) => {
 	const discharge = new Date(d[0], Number(d[1]) - 1, d[2]).getTime();
 	const now = new Date().getTime();
 
-	let duration = discharge - enlistment;
-	let pastTime = now - enlistment;
+	let duration = Math.ceil((discharge - enlistment) / (1000 * 60 * 60 * 24));
+	let pastTime = Math.ceil((now - enlistment) / (1000 * 60 * 60 * 24));
 
-	let calculatedDays = Math.ceil((duration - pastTime) / (1000 * 60 * 60 * 24));
+	let calculatedDays = duration - pastTime;
 	let percentage = (calculatedDays / duration).toFixed(2);
 
 	if (pastTime <= 0) {
