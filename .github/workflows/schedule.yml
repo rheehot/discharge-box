@@ -25,5 +25,5 @@ jobs:
           ENLISTMENT_DATE: ${{ secrets.ENLISTMENT_DATE }}
           DISCHARGE_DATE: ${{ secrets.DISCHARGE_DATE }}
           GIST_ID: ${{ secrets.GIST_ID }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npm run calculate
