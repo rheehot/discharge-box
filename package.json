@@ -1,7 +1,7 @@
 {
 	"name": "discharge-box",
 	"version": "1.0.0",
-	"description": "A calendar to the military service discharge date.",
+	"description": "Update a pinned gist to contain the military service discharge date.",
 	"main": "index.js",
 	"scripts": {
 		"calculate": "node index.js",
